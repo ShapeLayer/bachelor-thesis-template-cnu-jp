@@ -231,11 +231,17 @@
     #text(size: 16pt)[#author]
     #v(3cm)
     #text(size: 14.5pt)[
-      1차 지도 일지: #coach-date.first.year\년 #coach-date.first.month\월 #coach-date.first.day\일
+      #if (coach-date.first != none) [
+        1차 지도 일지: #coach-date.first.year\년 #coach-date.first.month\월 #coach-date.first.day\일
+      ]
       #v(0.5cm)
-      2차 지도 일지: #coach-date.second.year\년 #coach-date.second.month\월 #coach-date.second.day\일
+      #if (coach-date.second != none) [
+        2차 지도 일지: #coach-date.second.year\년 #coach-date.second.month\월 #coach-date.second.day\일
+      ]
       #v(0.5cm)
-      3차 지도 일지: #coach-date.third.year\년 #coach-date.third.month\월 #coach-date.third.day\일
+      #if (coach-date.third != none) [
+        3차 지도 일지: #coach-date.third.year\년 #coach-date.third.month\월 #coach-date.third.day\일
+      ]
     ]
     #v(1cm)
     #text(size: 16pt)[지도교수 #h(.3em) #supervisor #h(.3em) (인)]
