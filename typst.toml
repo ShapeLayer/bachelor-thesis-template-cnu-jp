@@ -1,0 +1,14 @@
+[package]
+name = "cnu-bachelor-thesis-jp"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["ShapeLayer"]
+description = "Bachelor's thesis template for Chonnam National University, Department of Japanese Language and Literature."
+repository = "https://github.com/ShapeLayer/bachelor-thesis-template-cnu-jp"
+keywords = ["thesis", "korean", "japanese", "chonnam"]
+categories = ["template"]
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "thumbnail.png"
